@@ -1,4 +1,4 @@
-import { ArrowRight, Calendar, ClipboardCheck, Clock, FileCog, Mail, BarChart3, Globe, Palette, Star } from "lucide-react";
+import { ArrowRight, Calendar, ClipboardCheck, Clock, FileCog, BarChart3, Globe, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";

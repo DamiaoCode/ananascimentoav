@@ -38,7 +38,6 @@ const formSchema = z.object({
 
 export default function ContatoPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -69,13 +68,12 @@ export default function ContatoPage() {
           duration: 5000,
         });
         form.reset();
-        setFormSubmitted(true);
       } else {
         toast.error("Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.", {
           duration: 5000,
         });
       }
-    } catch (error) {
+    } catch {
       toast.error("Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.", {
         duration: 5000,
       });

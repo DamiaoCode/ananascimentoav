@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Calendar, Clock, FileCog, Mail, Phone, BarChart3, Globe, Palette, MessageCircle, Database, ShoppingCart, ShieldCheck, Star } from "lucide-react";
+import { ArrowRight, Calendar, Clock, Mail, BarChart3, Globe, Palette, MessageCircle, Database, ShoppingCart, ShieldCheck, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 

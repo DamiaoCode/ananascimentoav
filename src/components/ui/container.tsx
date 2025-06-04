@@ -1,7 +1,8 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 
-interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {}
+// Estendendo HTMLAttributes diretamente sem adicionar novos atributos
+type ContainerProps = React.HTMLAttributes<HTMLDivElement>;
 
 export function Container({ className, children, ...props }: ContainerProps) {
   return (
